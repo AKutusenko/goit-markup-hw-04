@@ -11,6 +11,7 @@
   --hero-link-background-color: #2196f3;
   --hero-background-color: #2f303a;
   --footer-background-color: #2f303a;
+  --icons-mostly-used-color: #afb1b8;
 }
 
 /* Normalize */
@@ -335,7 +336,7 @@ h3 {
 
 /* What are we doing */
 .what-are-we-doing {
-  padding-bottom: 94px;
+  padding-bottom: 106px;
 }
 .section-title {
   font-weight: 700;
@@ -361,8 +362,8 @@ h3 {
 
 /* Team */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 82px;
+  padding-bottom: 75px;
 }
 
 .team .section-title {
@@ -392,8 +393,7 @@ h3 {
 }
 
 .team-list-item-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-member {
@@ -420,7 +420,7 @@ h3 {
 
 .social-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .social-list-link {
@@ -445,9 +445,64 @@ h3 {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--icons-mostly-used-color);
 }
 /* End team */
+
+/* Сlients */
+.clients {
+  padding-top: 82px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: var(--icons-mostly-used-color);
+}
+
+.clients-icon-1 {
+  width: 45px;
+  height: 50px;
+}
+.clients-icon-2 {
+  width: 40px;
+  height: 52px;
+}
+.clients-icon-3 {
+  width: 41px;
+  height: 43px;
+}
+.clients-icon-4 {
+  width: 80px;
+  height: 43px;
+}
+.clients-icon-5 {
+  width: 59px;
+  height: 47px;
+}
+.clients-icon-6 {
+  width: 89px;
+  height: 46px;
+}
+
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+/* End Сlients */
 /* End Studio Main */
 
 /* Portfolio main */
