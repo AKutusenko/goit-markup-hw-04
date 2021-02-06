@@ -67,7 +67,7 @@ h1,
 h2,
 h3 {
   /* background-color: burlywood; */
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 /* Container */
@@ -158,6 +158,7 @@ h3 {
   fill: currentColor;
   margin-right: 10px;
 }
+
 .contacts-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -183,6 +184,14 @@ h3 {
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-left-side {
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -223,6 +232,27 @@ h3 {
 .footer-contacts-list-link:hover,
 .footer-contacts-list-link:focus {
   color: var(--accent-color);
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mostly-used-color-inverse);
+
+  margin-bottom: 20px;
+}
+
+.join .social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join .social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--mostly-used-color-inverse);
 }
 /* End footer */
 
@@ -308,6 +338,7 @@ h3 {
   background-color: #f5f4fa;
   text-align: center;
   padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .advantages-icon {
@@ -338,6 +369,7 @@ h3 {
 .what-are-we-doing {
   padding-bottom: 106px;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -364,6 +396,8 @@ h3 {
 .team {
   padding-top: 82px;
   padding-bottom: 75px;
+
+  background-color: #f5f4fa;
 }
 
 .team .section-title {
@@ -420,7 +454,10 @@ h3 {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list-link {
@@ -458,6 +495,8 @@ h3 {
 .clients-list {
   display: flex;
   justify-content: space-between;
+
+  margin-top: 50px;
 }
 
 .clients-list-link {
@@ -466,6 +505,9 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients-icon {
@@ -476,22 +518,27 @@ h3 {
   width: 45px;
   height: 50px;
 }
+
 .clients-icon-2 {
   width: 40px;
   height: 52px;
 }
+
 .clients-icon-3 {
   width: 41px;
   height: 43px;
 }
+
 .clients-icon-4 {
   width: 80px;
   height: 43px;
 }
+
 .clients-icon-5 {
   width: 59px;
   height: 47px;
 }
+
 .clients-icon-6 {
   width: 89px;
   height: 46px;
@@ -502,6 +549,10 @@ h3 {
   fill: var(--accent-color);
 }
 
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
 /* End Сlients */
 /* End Studio Main */
 
@@ -558,6 +609,13 @@ h3 {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.projects-list-item:hover,
+.projects-list-item:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list-item-container {
